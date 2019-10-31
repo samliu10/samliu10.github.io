@@ -22,11 +22,10 @@ a:hover {
 h1 {
     font-size: 3em;
     font-family:'Verdana', 'Arial', 'Sans-Serif';
-    letter-spacing: 1.53m;
+    letter-spacing: 0.8m;
 }
 p {
     font-size: 1.5em;
-    letter-spacing: 1.53m;
     color: #333;
 }
 footer {
