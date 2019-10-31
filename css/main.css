@@ -4,7 +4,6 @@ body {
 }
 nav ul, footer ul {
     font-family:'Verdana', 'Arial', 'Sans-Serif';
-    letter-spacing: 10px;
     padding: 0px;
     list-style: none;
     font-weight: bold;
@@ -22,7 +21,8 @@ a:hover {
 }
 h1 {
     font-size: 3em;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    font-family:'Verdana', 'Arial', 'Sans-Serif';
+    letter-spacing: 10px;
 }
 p {
     font-size: 1.5em;
