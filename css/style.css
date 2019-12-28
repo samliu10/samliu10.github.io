@@ -512,7 +512,7 @@ input[type=textarea] {
 button[type=submit] {
   width: 60px;
   display: inline-block;
-  margin-top: 25px;
+  margin-top: 15px;
   margin-right: 4px;
   background-color: #f2f2f2;
 }
