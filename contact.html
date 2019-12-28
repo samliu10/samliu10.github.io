@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<!Personal Portfolio.
+
+Samantha Liu
+December 21, 2019
+-->
+<html lang="en">
+<head>
+    <!------------------------- Metadata ------------------------->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Samantha Liu Personal Portfolio">
+  <meta name="author" content="Samantha Liu">
+  <meta name="keywords" content="HTML, CSS">
+
+    <!------------------------- Title ------------------------->
+  <title>Samantha Liu | Contact</title>
+
+    <!------------------------- Scripts ------------------------->
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+  <script src="js/typed.min.js"></script>
+  <script src="js/overlay.js"></script>
+
+  <script type="text/javascript">
+	   $(window).load(function() {
+		     $(".preloader").fadeOut("slow");;
+	      });
+  </script>
+</head>
+
+  <body>
+    <div class="main-container">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!------------------------- Preloader ------------------------->
+    <div class="preloader">
+      <div class="circle1"></div>
+      <div class="circle2"></div>
+      <div class="circle3"></div>
+    </div>
+
+    <!------------------------- Header ------------------------->
+    <section class="top" id="home">
+      <!------------------------- Navigation ------------------------->
+      <header id="header">
+        <div class="header-content">
+          <a class="logo" href="#">Samantha Liu</a>
+        </div>
+        <div class="btn-container">
+          <span onclick="openNav()">
+            <div class="container">
+              <div class="bar1"></div>
+              <div class="bar2"></div>
+              <div class="bar3"></div>
+
+            </div>
+          </span>
+        </div>
+      </header>
+
+    <!-- The overlay -->
+      <div id="myNav" class="overlay">
+
+      <!-- Button to close the overlay navigation -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+      <!-- Overlay content -->
+        <div class="overlay-content">
+
+          <a href="index.html" onclick="closeNav()">Home</a>
+          <a href="aboutme.html" onclick="closeNav()">About Me</a>
+          <a href="index.html#portfolio" onclick="closeNav()">Portfolio</a>
+          <a href="Samantha_Liu_Resume.pdf" onclick="closeNav()">Resume</a>
+          <a href="contact.html" onclick="closeNav()">Contact</a>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!------------------------- Contact Me ------------------------->
+
+    <section>
+      <div class="contact-item">
+        <h1>Contact Me</h1>
+      </div>
+
+      <!------------------------- Contact Form ------------------------->
+
+      <div class="form-container">
+
+          <form action="mail.php" method="POST">
+
+            <input type="text" id="firstname" name="firstname" placeholder="First Name*" required>
+
+
+            <input type="text" id="lastname" name="lastname" placeholder="Last Name*" required>
+
+            <input type="text" id="email" name="email" placeholder="Email*" required>
+
+
+            <input type="textarea" id="message" name="message" placeholder="Message*" required>
+
+            <input type="submit" value="Send">
+          </form>
+
+      </div>
+      <div class="contact-description">
+        <div class="contact-content">
+          <h2>Let's Work Together!</h2>
+          <br>
+          <p class="project-details">Creativity thrives with collaboration.
+            Send me a message, and I'll get back to you
+            as soon as I can!
+
+        </p>
+        </div>
+      </div>
+
+  </section>
+
+  <!------------------------- Footer ------------------------->
+  <footer>
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-12 col-sm-12">
+          <p class="footer-text"  data-wow-delay="0.3s">Samantha Liu - 2019</p>
+          <ul class="social-icon wow fadeInUp"  data-wow-delay="0.6s">
+
+            <li><a href="https://www.facebook.com/profile.php?id=100010914094505"
+              class="fa fa-facebook" target="blank"></a></li>
+            <li><a href="https://www.linkedin.com/in/samantha-liu-b3892b187/"
+              class="fa fa-linkedin" target="blank"></a></li>
+            <li><a href="mailto:sl2486@cornell.edu?" class="fa fa-envelope"></a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
