@@ -282,7 +282,7 @@ html {
 
 /* Overlay and project descriptions */
 .square .content:hover {
-  background-image: url("black.png");
+  background-color: #000;
   opacity: 0.9;
   transition: 0.45s ease;
 }
