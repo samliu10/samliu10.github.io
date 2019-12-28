@@ -1,9 +1,3 @@
-<!DOCTYPE html>
-<!Personal Portfolio.
-
-Samantha Liu
-December 21, 2019
--->
 <html lang="en">
 <head>
     <!------------------------- Metadata ------------------------->
@@ -73,7 +67,7 @@ December 21, 2019
 
           <a href="index.html" onclick="closeNav()">Home</a>
           <a href="aboutme.html" onclick="closeNav()">About Me</a>
-          <a href="#portfolio" onclick="closeNav()">Portfolio</a>
+          <a href="index.html#portfolio" onclick="closeNav()">Portfolio</a>
           <a href="Samantha_Liu_Resume.pdf" onclick="closeNav()">Resume</a>
           <a href="contact.html" onclick="closeNav()">Contact</a>
 
@@ -82,56 +76,49 @@ December 21, 2019
       </div>
     </section>
 
-
-    <!------------------------- About Me ------------------------->
+      <!------------------------- Portfolio Item ------------------------->
     <section>
-      <div class="me-container" id="home">
-        <h1 class="typing"><span class="typing-text"></span><span class="type"></span></h1>
-        <script type="text/javascript">
-          var typed = new Typed('.typing-text', {
-            strings: ["Designer.", "Programmer.", "Developer."],
-            loop: true,
-            typeSpeed: 80,
-            backSpeed: 80,
-            backDelay: 1050,
-          });
-          </script>
+      <div class="portfolio-item">
+        <h1>Cavern of Gold</h1>
+        <h2>Java</h2>
+      </div>
+
+      <div class="pictures">
+        <div class="square-picture">
+          <img class="project-image" src="images/huntTheOrb.png" alt="treasure maze">
+        </div>
+        <div class="square-picture">
+          <img class="project-image" src="images/scram.png" alt="treasure maze with gold">
+        </div>
+      </div>
+      <div class="project-description">
+        <div class="project-content">
+          <h2>Date:  November 2019</h2>
+          <br>
+          <p class="project-details">According to all good adventure movies,
+          the path to the treasure is not an easy one. In this simulation,
+          the character is placed on a map and uses a locally-optimized
+          traversal algorithm to get to the treasure. Discovery of
+          the treasure causes a change in the map, and all of the previously
+          hidden gold is revealed. The character collects as much gold as possible
+          before heading to the exit.
+          <br>
+          <br>
+          However, there's a catch. The character must
+          escape the maze without taking more than a certain number of steps.
+          If the character succeeds, the character's score is increased by a
+          bonus multiplier dependent on the amount of gold collected. Otherwise,
+          the character fails, and they receive a score of 0.
+          <br>
+          <br>
+          This implementation relies on a globally-optimized traversal algorithm to
+          maximize the amount of gold collected by ranking gold-to-distance
+          ratios of tiles in the map. The character always escapes in time, and
+          the mission is a success.
+        </p>
+        </div>
       </div>
     </section>
-
-  <!------------------------- Portfolio ------------------------->
-    <section>
-      <div class="square-container" id="portfolio">
-
-        <div class="square">
-          <div class="content">
-            <a href="cavernGold.html"><img src="images/cavernGold.png" alt="gemstone">
-              <div class="caption">
-                <div class="caption-content">Cavern of Gold</div>
-              </div></a>
-          </div>
-        </div>
-
-        <div class="square">
-          <div class="content">
-            <a href="aliens.html"><img src="images/aliens.png" alt="alien ufo">
-              <div class="caption">
-                <div class="caption-content">Alien Invaders</div>
-              </div></a>
-          </div>
-        </div>
-
-        <div class="square">
-          <div class="content">
-            <a href="spotify.html"><img src="images/spotify.png" alt="music play button">
-              <div class="caption">
-                <div class="caption-content">Spotify Playlist Clustering</div>
-              </div></a>
-          </div>
-        </div>
-
-    </section>
-    <!-- portfolio grid section -->
 
     <!------------------------- Footer ------------------------->
     <footer>
@@ -154,4 +141,4 @@ December 21, 2019
       </div>
     </footer>
   </body>
-</html>
+  </html>

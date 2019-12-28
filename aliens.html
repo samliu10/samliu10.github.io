@@ -4,6 +4,7 @@
 Samantha Liu
 December 21, 2019
 -->
+
 <html lang="en">
 <head>
     <!------------------------- Metadata ------------------------->
@@ -73,7 +74,7 @@ December 21, 2019
 
           <a href="index.html" onclick="closeNav()">Home</a>
           <a href="aboutme.html" onclick="closeNav()">About Me</a>
-          <a href="#portfolio" onclick="closeNav()">Portfolio</a>
+          <a href="index.html#portfolio" onclick="closeNav()">Portfolio</a>
           <a href="Samantha_Liu_Resume.pdf" onclick="closeNav()">Resume</a>
           <a href="contact.html" onclick="closeNav()">Contact</a>
 
@@ -82,56 +83,50 @@ December 21, 2019
       </div>
     </section>
 
-
-    <!------------------------- About Me ------------------------->
+      <!------------------------- Portfolio Item ------------------------->
     <section>
-      <div class="me-container" id="home">
-        <h1 class="typing"><span class="typing-text"></span><span class="type"></span></h1>
-        <script type="text/javascript">
-          var typed = new Typed('.typing-text', {
-            strings: ["Designer.", "Programmer.", "Developer."],
-            loop: true,
-            typeSpeed: 80,
-            backSpeed: 80,
-            backDelay: 1050,
-          });
-          </script>
+      <div class="portfolio-item">
+        <h1>Alien Invaders</h1>
+        <h2>Python</h2>
+      </div>
+
+      <div class="pictures">
+        <div class="square-picture">
+          <img class="project-image" src="images/infoScreen.png" alt="game information screen">
+        </div>
+        <div class="square-picture">
+          <img class="project-image" src="images/alienShoot.png" alt="alien invaders game">
+        </div>
+      </div>
+      <div class="project-description">
+        <div class="project-content">
+          <h2>Date:  May 2019</h2>
+          <br>
+          <p class="project-details">This game is a take on the classic arcade
+            game, Space Invaders, that uses stateful controllers to run an
+            interactive application. The player gets 3 lives, and in order to win,
+            the player must shoot all the aliens. If the aliens cross the defense
+            line or the player loses all 3 lives, then the aliens win.
+          <br>
+          <br>
+          Upon initializing the application, the player can choose to how many
+          aliens to battle and what speed at which the aliens will move. The game
+          incorporates programming animation, collisions, and sound to enhance
+          user experience. A sound plays every time an alien fires or the player fires
+          as well as when an alien bolt collides with the player's ship or the player's
+          bolt hits an alien. The sound can be turned on and off during the game by
+          pressing 'h' and 'f', respectively.
+          <br>
+          <br>
+          If the player destroyes all the aliens in the wave without losing a life,
+          a new wave of aliens is created that moves 0.8 times faster than the
+          previous wave. The score is updated live as the player destroys aliens.
+          30 points are awarded if the player destroys an alien in the front row
+          of its column, and 15 points if the alien is behind another.
+        </p>
+        </div>
       </div>
     </section>
-
-  <!------------------------- Portfolio ------------------------->
-    <section>
-      <div class="square-container" id="portfolio">
-
-        <div class="square">
-          <div class="content">
-            <a href="cavernGold.html"><img src="images/cavernGold.png" alt="gemstone">
-              <div class="caption">
-                <div class="caption-content">Cavern of Gold</div>
-              </div></a>
-          </div>
-        </div>
-
-        <div class="square">
-          <div class="content">
-            <a href="aliens.html"><img src="images/aliens.png" alt="alien ufo">
-              <div class="caption">
-                <div class="caption-content">Alien Invaders</div>
-              </div></a>
-          </div>
-        </div>
-
-        <div class="square">
-          <div class="content">
-            <a href="spotify.html"><img src="images/spotify.png" alt="music play button">
-              <div class="caption">
-                <div class="caption-content">Spotify Playlist Clustering</div>
-              </div></a>
-          </div>
-        </div>
-
-    </section>
-    <!-- portfolio grid section -->
 
     <!------------------------- Footer ------------------------->
     <footer>
@@ -154,4 +149,4 @@ December 21, 2019
       </div>
     </footer>
   </body>
-</html>
+  </html>

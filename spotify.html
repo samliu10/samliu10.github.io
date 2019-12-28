@@ -1,9 +1,3 @@
-<!DOCTYPE html>
-<!Personal Portfolio.
-
-Samantha Liu
-December 21, 2019
--->
 <html lang="en">
 <head>
     <!------------------------- Metadata ------------------------->
@@ -73,7 +67,7 @@ December 21, 2019
 
           <a href="index.html" onclick="closeNav()">Home</a>
           <a href="aboutme.html" onclick="closeNav()">About Me</a>
-          <a href="#portfolio" onclick="closeNav()">Portfolio</a>
+          <a href="index.html#portfolio" onclick="closeNav()">Portfolio</a>
           <a href="Samantha_Liu_Resume.pdf" onclick="closeNav()">Resume</a>
           <a href="contact.html" onclick="closeNav()">Contact</a>
 
@@ -82,56 +76,56 @@ December 21, 2019
       </div>
     </section>
 
-
-    <!------------------------- About Me ------------------------->
+      <!------------------------- Portfolio Item ------------------------->
     <section>
-      <div class="me-container" id="home">
-        <h1 class="typing"><span class="typing-text"></span><span class="type"></span></h1>
-        <script type="text/javascript">
-          var typed = new Typed('.typing-text', {
-            strings: ["Designer.", "Programmer.", "Developer."],
-            loop: true,
-            typeSpeed: 80,
-            backSpeed: 80,
-            backDelay: 1050,
-          });
-          </script>
+      <div class="portfolio-item">
+        <h1>Spotify Playlist Creator</h1>
+        <h2>Python</h2>
+      </div>
+
+      <div class="pictures">
+        <div class="square-picture">
+          <img class="project-image" src="images/spotifyPlaylist3.png" alt="Spotify playlist">
+        </div>
+        <div class="square-picture">
+          <img class="project-image" src="images/unclustered4.png" alt="k-means clustering unclustered">
+        </div>
+        <div class="square-picture">
+          <img class="project-image" src="images/clustered4.png" alt="k-means clustering clustered">
+        </div>
+      </div>
+      <div class="project-description">
+        <div class="project-content">
+          <h2>Date:  April 2019</h2>
+          <br>
+          <p class="project-details">This application used Spotipy, the Python
+            API for Spotify, to cluster playlists with a k-means clustering
+            algorithm. The playlists are organized by analyzing song
+            characteristics such as tempo, style, key, volume, time signature, etc.
+            The application creates playlists based on a given number of clusters
+            and groups songs found in a playlist specified by the user.
+          <br>
+          <br>
+          The algorithm does k-means clustering on a given set of data. The
+          user can specify a desired number of clusters <i>k</i>, and the algorithm
+          starts with choosing <i>k</i> random centroids. Each data point is
+          assigned to the nearest centroid to create clusters in what is known
+          as partitioning. The centroids are then recalculated, and the previous
+          steps are repeated until convergence, the point at which the centroids
+          stop changing.
+          <br>
+          <br>
+          The visual representation of the process shows the data set being used,
+          the number of clusters, the number of times centroids have been recalculated,
+          and whether or not the algorithm has converged. There is also an option
+          to see an overlay representing the range of data in a particular centroid.
+          The second image to the left shows the initial state of the algorithm
+          after choosing 7 clusters, and the third shows what those
+          clusters look like when the algorithm has converged.
+        </p>
+        </div>
       </div>
     </section>
-
-  <!------------------------- Portfolio ------------------------->
-    <section>
-      <div class="square-container" id="portfolio">
-
-        <div class="square">
-          <div class="content">
-            <a href="cavernGold.html"><img src="images/cavernGold.png" alt="gemstone">
-              <div class="caption">
-                <div class="caption-content">Cavern of Gold</div>
-              </div></a>
-          </div>
-        </div>
-
-        <div class="square">
-          <div class="content">
-            <a href="aliens.html"><img src="images/aliens.png" alt="alien ufo">
-              <div class="caption">
-                <div class="caption-content">Alien Invaders</div>
-              </div></a>
-          </div>
-        </div>
-
-        <div class="square">
-          <div class="content">
-            <a href="spotify.html"><img src="images/spotify.png" alt="music play button">
-              <div class="caption">
-                <div class="caption-content">Spotify Playlist Clustering</div>
-              </div></a>
-          </div>
-        </div>
-
-    </section>
-    <!-- portfolio grid section -->
 
     <!------------------------- Footer ------------------------->
     <footer>
@@ -154,4 +148,4 @@ December 21, 2019
       </div>
     </footer>
   </body>
-</html>
+  </html>
