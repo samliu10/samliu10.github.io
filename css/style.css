@@ -507,11 +507,9 @@ input[type=textarea] {
   width: 100%;
   text-indent: 1.5%;
   padding-bottom: 157px;
-
-
 }
 
-input[type=submit] {
+button[type=submit] {
   width: 60px;
   display: inline-block;
   margin-top: 15px;
@@ -519,14 +517,12 @@ input[type=submit] {
   background-color: #f2f2f2;
 }
 
-
-input[type=submit]:hover {
+button[type=submit]:hover {
   background-color: #e5e5e5;
   transition: 0.2s ease-in-out;
 }
 
-
-input {
+input, button {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   overflow-x: wrap;
