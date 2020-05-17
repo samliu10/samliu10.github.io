@@ -16,6 +16,7 @@
    <title>Samantha Liu</title>
   <link href="css/style.css" rel="stylesheet">
   <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <script src="js/typed.min.js"></script>
 
 </head>
 
@@ -51,12 +52,30 @@
 
             </div>
           </nav>
-
     </section>
+
+    <!------------------------- Typing Animation ------------------------->
+    <section>
+        <div class="typing-container" id="home">
+          <p class="typing-text"><span class="text"></span></p>
+          <script type="text/javascript">
+            var typed = new Typed('.text', {
+              strings: ["Designer.", "Programmer.", "Developer."],
+              loop: true,
+              typeSpeed: 80,
+              backSpeed: 80,
+              backDelay: 1050,
+            });
+            </script>
+        </div>
+      </section>
 
 <!------------------------- Scripts ------------------------->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
 <script src="js/bootstrap.min.js"></script> 
+<script src="js/typed.min.js"></script>
+<script src="js/main.js"></script>
+
 
 </body>
 </html> 
