@@ -49,8 +49,14 @@
 
 /* ---------------------------- Nav Bar --------------------------------*/
 #transparent {
-    background-color: transparent;
-    margin: 30px 40px 0 40px;
+    background-color: #fff;
+    margin: 0px 40px 0 40px;
+    position: fixed;
+    width: 94.3%;
+    top: 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    z-index: 1;
 }
 
 #custom-toggler {
@@ -82,7 +88,7 @@
 /* ---------------------------- Typing Animation --------------------------------*/
 .typing-container {
     background-color: #9CA5B7;
-    height: 540px;
+    height: 640px;
     margin: 30px 56px 0 56px;
     
 }
@@ -98,7 +104,7 @@
     font-weight: 100;
     font-size: 5vw;
     position: relative;
-    top: 210px;
+    top: 310px;
     display: inline-block;
     color: #fff;
 }
@@ -305,6 +311,7 @@
   }
 
   /* ---------------------------- Image Border Hover Effect --------------------------------*/
+  /* ------------------- Source: https://codepen.io/quatmo/pen/xKIze -----------------------*/
 
 figure.effect-bubba figcaption::before,
 figure.effect-bubba figcaption::after {
