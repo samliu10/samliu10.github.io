@@ -47,6 +47,10 @@
     font-family: 'Roboto';
 }
 
+body {
+    position: relative;
+}
+
 /* ---------------------------- Nav Bar --------------------------------*/
 #transparent {
     background-color: #fff;
@@ -83,6 +87,10 @@
 
 #custom-nav-link:hover {
     color: #A5A5A5;
+}
+
+.active {
+    color: #A5A5A5 !important;
 }
 
 /* ---------------------------- Typing Animation --------------------------------*/
