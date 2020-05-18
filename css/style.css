@@ -51,6 +51,10 @@ body {
     position: relative;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* ---------------------------- Nav Bar --------------------------------*/
 #transparent {
     background-color: #fff;
