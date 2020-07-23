@@ -443,6 +443,21 @@ figure.effect-bubba:hover p {
 	transform: translate3d(0,0,0);
 }
 
-.hide {
-  opacity: 0;
+  /* ---------------------------- Slide In Animation --------------------------------*/
+  /* ------------- Wow.js animations didn't work: used https://animate.style/ ------------------*/
+
+.wow {
+  visibility: hidden;
+}
+
+.animate__animated.animate__slideInUp {
+  --animate-duration: 0.9s;
+}
+
+.animate__delay-1s {
+  --animate-delay: 0.3s;
+}
+
+.animate__delay-2s {
+  --animate-delay: 0.4s;
 }

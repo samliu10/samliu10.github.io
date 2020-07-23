@@ -76,7 +76,7 @@
 
   <!------------------------- About Me ------------------------->
   <section id="about">
-    <div class="about-container">
+    <div class="about-container wow animate__animated animate__slideInUp">
 
       <p class="about-title">About Me</p>
       <p class="about-description-top">
@@ -101,7 +101,7 @@
   <section id="portfolio">
     <div class="square-container" id="portfolio">
 
-      <div class="square">
+      <div class="square wow animate__animated animate__slideInUp">
         <div class="content">
           <figure class="effect-bubba">
             <a href="project_way.html"><img src="images/way_thumbnail.png" alt="Credit Card">
@@ -115,7 +115,7 @@
         </div>
       </div>
 
-      <div class="square">
+      <div class="square wow animate__animated animate__slideInUp animate__delay-1s">
         <div class="content">
           <figure class="effect-bubba">
             <a href="ecoeat.html"><img src="images/ecoeat_thumbnail.png" alt="Trash Can">
@@ -129,7 +129,7 @@
         </div>
       </div>
 
-      <div class="square wow slideInUp">
+      <div class="square wow slideInUp wow animate__animated animate__slideInUp animate__delay-2s">
         <div class="content">
           <figure class="effect-bubba">
             <a href="uniswift.html"><img src="images/uniSwift_thumbnail.png" alt="Chat Message">
@@ -143,7 +143,7 @@
         </div>
       </div>
 
-      <div class="square wow slideInUp">
+      <div class="square wow animate__animated animate__slideInUp ">
         <div class="content">
           <figure class="effect-bubba">
             <a href="ezsave.html"><img src="images/ezsave_thumbnail.png" alt="Coin">
@@ -157,7 +157,7 @@
         </div>
       </div>
 
-      <div class="square wow slideInUp">
+      <div class="square wow animate__animated animate__slideInUp animate__delay-1s">
         <div class="content">
           <figure class="effect-bubba">
             <a href="camera.html"><img src="images/camera_thumbnail.png" alt="Camera">
@@ -171,7 +171,7 @@
         </div>
       </div>
 
-      <div class="square wow slideInUp">
+      <div class="square wow animate__animated animate__slideInUp animate__delay-2s">
         <div class="content">
           <figure class="effect-bubba">
             <a href="orange.html"><img src="images/orange_thumbnail.png" alt="Orange">
@@ -189,12 +189,22 @@
 
 
   <!------------------------- Scripts ------------------------->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
-  <script src="js/typed.min.js"></script>
   <script src="js/main.js"></script>
 
+  <!------------------------- Used to animate on page scroll ------------------------->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+  <script>
+    wow = new WOW({
+      boxClass: 'wow',
+      animateClass: 'animated',
+      offset: 100
+    }
+    );
 
+    wow.init();
+  </script>
 
 </body>
 
