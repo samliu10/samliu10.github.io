@@ -209,178 +209,254 @@ html {
 .about-divider {
   height: 2px;
   background-color: #FFFFFF;
-    margin: 40px auto 40px auto;
+  margin: 40px auto 40px auto;
 }
 
 /* ---------------------------- Portfolio Grid --------------------------------*/
 
 /* Creates 3x3 responsive grid */
 .square-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 90px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 90px;
   }
   
-  .square {
-    position: relative;
-    flex-basis: calc(33.333% - 5.35vw);
-    margin: 2vw;
-    box-sizing: border-box;
-  }
+.square {
+  position: relative;
+  flex-basis: calc(33.333% - 5.35vw);
+  margin: 2vw;
+  box-sizing: border-box;
+}
+
+.square::before {
+  content: '';
+  display: block;
+  padding-top: 100%;
+}
+
+.square .content {
+  position: absolute;
+  top: 0; left: 0;
+  height: 100%;
+  width: 100%;
   
-  .square::before {
-    content: '';
-    display: block;
-    padding-top: 100%;
-  }
+}
+
+@media (min-width: 600px) {
+  .square { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (min-width: 900px) {
+  .square { grid-template-columns: repeat(3, 1fr); }
+}
+
+/* Overlay and project descriptions */
+.square .content:hover {
+  background-color: #000;
+  opacity: 0.9;
+  transition: 0.6s ease;
+}
+
+.square .content:hover img {
+  opacity: 0.15;
+  transition: 0.6s ease;
+}
+
+.caption {
+  opacity: 0;
+  transition: 0.6s ease;
+}
+
+.square .content:hover .caption{
+  opacity: 1;
+}
+
+.caption-content  {
+  color: white;
+  font-size: 1.5vw;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+
+}
   
-  .square .content {
-    position: absolute;
-    top: 0; left: 0;
-    height: 100%;
-    width: 100%;
-    
-  }
+/* ---------------------------- Portfolio Items --------------------------------*/
+.portfolio-item {
+  width: 91.5%;
+  height: 200px;
+  position: relative;
+    background-color: #f2f2f2;
+  margin: 100px auto;
+  text-align: center;
+}
+
+.portfolio-item > h1 {
+  font-size: 40px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  padding-top: 55px;
+
+}
+.portfolio-item > h2 {
+  font-size: 15px;
+  font-weight: 100;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  margin-top: 15px;
+}
+
+.pictures {
+  width: 30%;
+  margin-left:4.25%;
+  margin-top: -50px;
+  display: inline-block;
+  float: left;
+
+}
+
+.square-picture {
+  position: relative;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.square-picture:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+.project-image {
+  position: absolute;
+}
+
+.project-description {
+  position: absolute;
+  width: 56.75%;
+  margin-left: 5%;
+  margin-top: -53px;
+  display: inline-block;
+  float: right;
+
+
+  overflow: auto;
+}
+
+.project-description:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+
+}
+
+.project-content {
+  position: absolute;
+}
+
+.project-content > p {
+  font-weight: 400;
+  font-size: 16px;
+  font-weight: 100;
+  letter-spacing: 0.1rem;
+
+}
+
+.project-content > h2 {
+  font-size: 20px;
+  font-weight: 550;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+
+/* ---------------------------- Contact --------------------------------*/
+.contact-main-container {
+  background-color: #F2F2F2;
+  margin: 30px 56px 56px 56px;
+  position: relative;
+  top: 20px;
+  padding: 48px;
+  text-align: left;
   
-  @media (min-width: 600px) {
-    .square { grid-template-columns: repeat(2, 1fr); }
-  }
-  
-  @media (min-width: 900px) {
-    .square { grid-template-columns: repeat(3, 1fr); }
-  }
-  
-  /* Overlay and project descriptions */
-  .square .content:hover {
-    background-color: #000;
-    opacity: 0.9;
-    transition: 0.6s ease;
-  }
-  
-  .square .content:hover img {
-    opacity: 0.15;
-    transition: 0.6s ease;
-  }
-  
-  .caption {
-    opacity: 0;
-    transition: 0.6s ease;
-  }
-  
-  .square .content:hover .caption{
-    opacity: 1;
-  }
-  
-  .caption-content  {
-    color: white;
-    font-size: 1.5vw;
-    font-weight: 300;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: center;
-  }
-  
-  img {
-    width: 100%;
-    height: 100%;
-  
-  }
-  
-  /* ---------------------------- Portfolio Items --------------------------------*/
-  .portfolio-item {
-    width: 91.5%;
-    height: 200px;
-    position: relative;
-      background-color: #f2f2f2;
-    margin: 100px auto;
-    text-align: center;
-  }
-  
-  .portfolio-item > h1 {
-    font-size: 40px;
-    font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: 0.3rem;
-    padding-top: 55px;
-  
-  }
-  .portfolio-item > h2 {
-    font-size: 15px;
-    font-weight: 100;
-    text-transform: uppercase;
-    letter-spacing: 0.3rem;
-    margin-top: 15px;
-  }
-  
-  .pictures {
-    width: 30%;
-    margin-left:4.25%;
-    margin-top: -50px;
-    display: inline-block;
-    float: left;
-  
-  }
-  
-  .square-picture {
-    position: relative;
-    width: 100%;
-    margin-bottom: 50px;
-  }
-  
-  .square-picture:after {
-    content: "";
-    display: block;
-    padding-bottom: 100%;
-  }
-  
-  .project-image {
-    position: absolute;
-  }
-  
-  .project-description {
-    position: absolute;
-    width: 56.75%;
-    margin-left: 5%;
-    margin-top: -53px;
-    display: inline-block;
-    float: right;
-  
-  
-    overflow: auto;
-  }
-  
-  .project-description:after {
-    content: "";
-    display: block;
-    padding-bottom: 100%;
-  
-  }
-  
-  .project-content {
-    position: absolute;
-  }
-  
-  .project-content > p {
-    font-weight: 400;
-    font-size: 16px;
-    font-weight: 100;
-    letter-spacing: 0.1rem;
-  
-  }
-  
-  .project-content > h2 {
-    font-size: 20px;
-    font-weight: 550;
-    text-transform: uppercase;
-    letter-spacing: 0.1rem;
-  }
+}
+
+.contact-title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 42px;
+}
+
+.contact-description-left {
+  width: 700px;
+  font-size: 20px;
+  position: relative;
+  line-height: 35px;
+  vertical-align: top;
+}
+
+.contact-title, .contact-description-left, .contact-resume, .contact-linkedin {
+  letter-spacing: 0.6px;
+}
+
+.contact-divider {
+  height: 2px;
+  background-color: #000000;
+  margin: 40px 20px;
+  transform: rotate(90deg);
+  width: 190px;
+  position: relative;
+  top: -10px;
+
+}
+
+.contact-description-left, .contact-divider, .contact-container-right {
+  display: inline-block;
+}
+
+.contact-resume, .contact-linkedin {
+  font-size: 20px;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  width: 200px;
+  vertical-align: top;
+  position: relative;
+  left: 15px;
+}
+
+.contact-resume {
+  margin-bottom: 35px;
+  vertical-align: top;
+  position: relative;
+  top: 10px;
+}
+
+.contact-resume:hover, .contact-linkedin:hover {
+  border: 1px solid #FFF8F8;
+  cursor: pointer;
+  color: #FFFFFF;
+  background-color: #AEAEAE;
+  transition: 0.3s ease;
+}
+
+.contact-link {
+  color: inherit !important;
+  text-decoration: none !important;
+}
 
   /* ---------------------------- Image Border Hover Effect --------------------------------*/
   /* ------------------- Source: https://codepen.io/quatmo/pen/xKIze -----------------------*/
