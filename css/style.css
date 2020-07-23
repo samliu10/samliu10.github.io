@@ -44,15 +44,15 @@
   }
 
 *{
-    font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 body {
-    position: relative;
+  position: relative;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 /* ---------------------------- Nav Bar --------------------------------*/
@@ -385,7 +385,7 @@ img {
 /* ---------------------------- Contact --------------------------------*/
 .contact-main-container {
   background-color: #F2F2F2;
-  margin: 30px 56px 56px 56px;
+  margin: 30px 56px 100px 56px;
   position: relative;
   top: 20px;
   padding: 48px;
@@ -458,8 +458,63 @@ img {
   text-decoration: none !important;
 }
 
-  /* ---------------------------- Image Border Hover Effect --------------------------------*/
-  /* ------------------- Source: https://codepen.io/quatmo/pen/xKIze -----------------------*/
+/* ---------------------------------- Footer ------------------------------------*/
+footer {
+  background-color: #86B0D6;
+  text-align: center;
+  clear: both;
+  position: absolute;
+  left: 0;
+  width: 100%;
+}
+
+.footer-text {
+  font-size: 15px;
+  color: #fff;
+  font-weight: 550;
+  letter-spacing: 2px;
+  position: relative;
+  top: 25px;
+  text-transform: uppercase;
+}
+
+.social-icon {
+  padding: 0;
+  margin-top: 20px;
+}
+
+.social-icon li {
+  list-style: none;
+  display: inline-block;
+}
+
+.social-icon li a {
+  border-radius: 100px;
+  border: 1px solid transparent;
+  color: #f2f2f2;
+  font-size: 22px;
+  width: 50px;
+  height: 50px;
+  line-height: 48px;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  transition: all 0.4s ease-in-out;
+  padding: 0px;
+  margin-top: 14px;
+  margin-right: 8px;
+  margin-left: 8px;
+  position: relative;
+  top: 0px;
+}
+
+.social-icon li a:hover {
+  background: #ffffff;
+  color: #86B0D6;
+}
+
+/* ---------------------------- Image Border Hover Effect --------------------------------*/
+/* ------------------- Source: https://codepen.io/quatmo/pen/xKIze -----------------------*/
 
 figure.effect-bubba figcaption::before,
 figure.effect-bubba figcaption::after {
