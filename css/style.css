@@ -44,7 +44,7 @@
   }
 
 *{
-    font-family: 'Roboto';
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 body {
@@ -120,35 +120,96 @@ html {
     color: #fff;
 }
 
+/* ---------------------------- Home --------------------------------*/
+
+.home-main-container {
+  position: relative;
+  margin: 0 auto 0 auto;
+  width: 1200px;
+  text-align: center;
+  height: 100vh;
+}
+
+.home-left-container {
+  position: relative;
+  text-align: center;
+  width: 520px;
+  left: -50px;
+  top: 252px;
+}
+
+.home-title, .home-description {
+  color: #2E2E2E;
+  font-family:'Source Sans Pro', sans-serif;
+
+}
+
+.home-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 72px;
+  letter-spacing: 2px;
+}
+
+.home-description {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  letter-spacing: 0.6px;
+}
+
+.home-divider {
+  width: 410px;
+  height: 3px;
+  background-color: #2E2E2E;
+  margin: 0 auto 30px auto;
+
+}
+
+.home-image-container {
+  width: 451px;
+  height: 278px;
+  position: relative;
+  top: 180px;
+  left: 50px;
+}
+
+.home-image-container, .home-left-container {
+  display: inline-block;
+}
+
 /* ---------------------------- About Me --------------------------------*/
 .about-container {
-    background-color: #F2F2F2;
-    height: 430px;
-    margin: 0px 56px 0 56px;
-    position: relative;
-    top: 50px;
+  background-color: #86B0D6;
+  margin: 0px 56px 0 56px;
+  position: relative;
+  top: 20px;
+  padding: 48px;
+  text-align: left;
+}
+
+.about-title, .about-description-top, .about-description-bottom {
+  color: #FFFFFF;
+  letter-spacing: 0.6px;
 }
 
 .about-title {
-    font-weight: 300;
-    font-size: 35px;
-    padding-top: 70px;
-
+  font-style: normal;
+  font-weight: 600;
+  font-size: 42px;
 }
 
-.about-description-top, .about-title, .about-description-bottom {
-    font-weight: 300;
-    margin: 20px 70px 0 70px;
-    line-height: 35px;
+.about-description-top, .about-description-bottom {
+  line-height: 35px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
 }
 
-.about-description-bottom {
-    padding-bottom: 40px;
-}
-
-.divider {
-    border: 0.5px solid black;
-    margin: 40px 70px;
+.about-divider {
+  height: 2px;
+  background-color: #FFFFFF;
+    margin: 40px auto 40px auto;
 }
 
 /* ---------------------------- Portfolio Grid --------------------------------*/
