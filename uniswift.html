@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!------------------------- Metadata ------------------------->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Samantha Liu Personal Portfolio">
+    <meta name="author" content="Samantha Liu">
+    <meta name="keywords" content="HTML, CSS">
+
+    <!------------------------- Title ------------------------->
+    <title>Samantha Liu | uniSwift</title>
+
+    <!------------------------- Stylesheets ------------------------->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+
+</head>
+
+<!------------------------- Content ------------------------->
+
+<body data-spy="scroll" data-target="#navbarToggler" data-offset="160">
+    <!------------------------- NavBar ------------------------->
+    <section id="nav">
+        <nav class="navbar navbar-expand-lg navbar-light" id="transparent">
+
+            <a class="navbar-brand" href="#">SAMANTHA LIU</a>
+            <button id="custom-toggler" class="navbar-toggler" type="button" data-toggle="collapse"
+                data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span id="custom-toggler-icon" class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarToggler">
+                <ul class="navbar-nav ml-auto mt-2 mt-lg-0 nav">
+                    <li class="nav-item">
+                        <a id="custom-nav-link" class="nav-link" href="index.html#nav">Home <span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="custom-nav-link" class="nav-link" href="index.html#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="custom-nav-link" class="nav-link active" href="index.html#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="custom-nav-link" class="nav-link" href="index.html#contact">Contact</a>
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+    </section>
+
+    <section id="portfolio">
+        <div class="individual-project-header">
+            <p class="individual-project-title">uniSwift</p>
+            <p class="individual-project-subtitle">Web App | Case Study | Summer 2020</p>
+        </div>
+
+        <div class="individual-project-container">
+            <div class="individual-project-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed volutpat eu nibh ultricies semper.
+                Vivamus porta, felis vitae facilisis sodales, felis est iaculis orci, et ornare sem mauris ut
+                turpis. Pellentesque vitae tortor nec tellus hendrerit aliquam. Donec condimentum leo eu ull
+                pellentesque urna rhoncus.
+                <br>
+                <br>
+                elis est iaculis orci, et ornare sem mauris ut turpis. Pellentesque vitae tortor nec tellus
+                hendrerit aliquam. Donec condimentum leo eu ullamcorper scelerisque pellentes rhoncus.
+                <br>
+                <br>
+                Has ne autem errem, cum sapientem necessitatibus an. Timeam mnesarchum eam te, dico offendit ea
+                sit. Qui nihil tempor virtute cu. Vix ei molestiae gubergren accommodare, vidit maiorum lucilius
+                eos in. Eu stet indoctum deseruisse his. Vis fastidii persecuti definiebas no.
+            </div>
+
+
+            <img class="individual-project-image wow animate__animated animate__slideInUp"
+                src="./images/uniswift_project1.png" alt="uniSwift App">
+            <img class="individual-project-image wow animate__animated animate__slideInUp"
+                src="./images/uniswift_project2.png" alt="uniSwift App">
+
+        </div>
+
+
+
+        </div>
+    </section>
+
+    <!------------------------- Footer ------------------------->
+    <footer>
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-12 col-sm-12">
+                    <p class="footer-text">Samantha Liu</p>
+                    <ul class="social-icon">
+
+                        <li><a href="https://www.facebook.com/profile.php?id=100010914094505" class="fa fa-facebook"
+                                target="_blank"></a></li>
+                        <li><a href="https://www.linkedin.com/in/samantha-liu-b3892b187/" class="fa fa-linkedin"
+                                target="_blank"></a>
+                        </li>
+                        <li><a href="mailto:sl2486@cornell.edu?" class="fa fa-envelope"></a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <!------------------------- Scripts ------------------------->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <!------------------------- Used to animate on page scroll ------------------------->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script>
+        wow = new WOW({
+            boxClass: 'wow',
+            animateClass: 'animated',
+            offset: 100
+        }
+        );
+
+        wow.init();
+    </script>
+
+</body>
+
+</html>
