@@ -134,7 +134,7 @@ html {
   position: relative;
   text-align: center;
   width: 520px;
-  left: -50px;
+  left: -65px;
   top: 252px;
 }
 
@@ -171,7 +171,7 @@ html {
   height: 278px;
   position: relative;
   top: 180px;
-  left: 50px;
+  left: 5px;
 }
 
 .home-image-container, .home-left-container {
@@ -203,7 +203,7 @@ html {
   line-height: 35px;
   font-style: normal;
   font-weight: 300;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .about-divider {
@@ -401,14 +401,14 @@ img {
 
 .contact-description-left {
   width: 700px;
-  font-size: 20px;
+  font-size: 18px;
   position: relative;
   line-height: 35px;
   vertical-align: top;
 }
 
 .contact-title, .contact-description-left, .contact-resume, .contact-linkedin {
-  letter-spacing: 0.6px;
+  letter-spacing: 0.4px;
 }
 
 .contact-divider {
@@ -427,7 +427,7 @@ img {
 }
 
 .contact-resume, .contact-linkedin {
-  font-size: 20px;
+  font-size: 18px;
   border: 1px solid black;
   border-radius: 10px;
   padding: 20px;
