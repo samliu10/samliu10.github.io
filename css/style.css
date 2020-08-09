@@ -154,7 +154,7 @@ html {
 .home-description {
   font-style: normal;
   font-weight: normal;
-  font-size: 22px;
+  font-size: 26px;
   letter-spacing: 0.6px;
 }
 
@@ -207,7 +207,7 @@ html {
 }
 
 .about-divider {
-  height: 2px;
+  height: 1px;
   background-color: #FFFFFF;
   margin: 40px auto 40px auto;
 }
@@ -390,7 +390,7 @@ img {
   top: 20px;
   padding: 48px;
   text-align: left;
-  
+  display: inline-block !important
 }
 
 .contact-title {
@@ -400,11 +400,11 @@ img {
 }
 
 .contact-description-left {
-  width: 700px;
   font-size: 18px;
   position: relative;
   line-height: 35px;
   vertical-align: top;
+  width: 60%;
 }
 
 .contact-title, .contact-description-left, .contact-resume, .contact-linkedin {
@@ -414,17 +414,21 @@ img {
 .contact-divider {
   height: 2px;
   background-color: #000000;
-  margin: 40px 20px;
+  margin: 40px 0px;
   transform: rotate(90deg);
   width: 190px;
   position: relative;
-  top: -10px;
-
 }
 
-.contact-description-left, .contact-divider, .contact-container-right {
-  display: inline-block;
+.contact-description-left,  .contact-divider, .contact-container-right {
+  display: inline-block !important;
 }
+
+.contact-container-right {
+  /* float: right; */
+  width: 20%;
+}
+
 
 .contact-resume, .contact-linkedin {
   font-size: 18px;
