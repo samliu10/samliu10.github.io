@@ -147,7 +147,7 @@ html {
 .home-title {
   font-style: normal;
   font-weight: bold;
-  font-size: 72px;
+  font-size: 74px;
   letter-spacing: 2px;
 }
 
@@ -159,7 +159,7 @@ html {
 }
 
 .home-divider {
-  width: 410px;
+  width: 430px;
   height: 3px;
   background-color: #2E2E2E;
   margin: 0 auto 30px auto;

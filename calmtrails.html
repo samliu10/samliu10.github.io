@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!------------------------- Metadata ------------------------->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Samantha Liu Personal Portfolio">
+  <meta name="author" content="Samantha Liu">
+  <meta name="keywords" content="HTML, CSS">
+
+  <!------------------------- Title ------------------------->
+  <title>Sam Liu | Monopoly</title>
+
+  <!------------------------- Stylesheets ------------------------->
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+
+</head>
+
+<!------------------------- Content ------------------------->
+
+<body data-spy="scroll" data-target="#navbarToggler" data-offset="160">
+  <!------------------------- NavBar ------------------------->
+  <section id="nav">
+    <nav class="navbar navbar-expand-lg navbar-light" id="transparent">
+
+      <a class="navbar-brand" href="#">SAM LIU</a>
+      <button id="custom-toggler" class="navbar-toggler" type="button" data-toggle="collapse"
+        data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+        <span id="custom-toggler-icon" class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarToggler">
+        <ul class="navbar-nav ml-auto mt-2 mt-lg-0 nav">
+          <li class="nav-item">
+            <a id="custom-nav-link" class="nav-link" href="index.html#nav">Home <span
+                class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a id="custom-nav-link" class="nav-link" href="index.html#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a id="custom-nav-link" class="nav-link active" href="index.html#portfolio">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a id="custom-nav-link" class="nav-link" href="index.html#contact">Contact</a>
+          </li>
+        </ul>
+
+      </div>
+    </nav>
+  </section>
+
+  <section id="portfolio">
+    <div class="individual-project-header">
+      <p class="individual-project-title">CalmTrails</p>
+      <p class="individual-project-subtitle">Mobile App | Case Study | Fall 2020</p>
+    </div>
+
+    <div class="individual-project-container wow animate__animated animate__slideInUp">
+      <div class="individual-project-description">
+        "This trail is too crowded. I don’t feel safe out on this trail alone.
+        I just want to get away from the stress of everyday life." These were common
+        frustrations that came up in user interviews with college students who run
+        and/or hike alone. Going for a run or hike is a way to de-stress and have
+        some alone time, but trails can be too crowded. In addition, encounters
+        with some strangers or parts of the trail may make people feel unsafe alone.
+        <br>
+        <br>
+        CalmTrails is the result of a semester-long case study for a human-computer
+        interaction course that began with user interviews and ended with a
+        high-fidelity prototype. It is a mobile app that aims to address four aspects of being outdoors:
+        improve the recreational experience for college students who hike or run
+        outdoors alone, support emotional and mental wellbeing and desire to
+        de-stress, encourage goal-setting and progress tracking, and
+        provide measures to ensure personal outdoor safety.
+        <br>
+        <br>
+        Users have access to AR functionality that generates a map based on a scan of
+        their surroundings on which they can see their location and places nearby
+        as well as indicate locations of an hazards on the trail. After a trip, users
+        are given the option to reflect on their trip and see their progress towards any
+        long-term goals they set, e.g. distance goals, frequency goals. The app also
+        generates trail recommendations for them based on these goals. Lastly, users
+        can input emergency contacts that can view their location while they are on the
+        trail as a personal safety measure.
+      </div>
+
+
+      <img class="individual-project-image wow animate__animated animate__slideInUp"
+        src="./images/calmtrails_project1.png" alt="CalmTrails App">
+      <img class="individual-project-image wow animate__animated animate__slideInUp"
+        src="./images/calmtrails_project2.png" alt="CalmTrails App">
+
+    </div>
+
+
+
+    </div>
+  </section>
+
+  <!------------------------- Footer ------------------------->
+  <footer>
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-12 col-sm-12">
+          <p class="footer-text">Sam Liu</p>
+          <ul class="social-icon">
+
+            <li><a href="https://www.facebook.com/profile.php?id=100010914094505" class="fa fa-facebook"
+                target="_blank"></a></li>
+            <li><a href="https://www.linkedin.com/in/samantha-liu-b3892b187/" class="fa fa-linkedin"
+                target="_blank"></a>
+            </li>
+            <li><a href="mailto:sl2486@cornell.edu?" class="fa fa-envelope"></a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+  <!------------------------- Scripts ------------------------->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+
+  <!------------------------- Used to animate on page scroll ------------------------->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+  <script>
+    wow = new WOW({
+      boxClass: 'wow',
+      animateClass: 'animated',
+      offset: 100
+    }
+    );
+
+    wow.init();
+  </script>
+
+</body>
+
+</html>

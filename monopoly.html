@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!------------------------- Metadata ------------------------->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Samantha Liu Personal Portfolio">
+  <meta name="author" content="Samantha Liu">
+  <meta name="keywords" content="HTML, CSS">
+
+  <!------------------------- Title ------------------------->
+  <title>Sam Liu | Monopoly</title>
+
+  <!------------------------- Stylesheets ------------------------->
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+
+</head>
+
+<!------------------------- Content ------------------------->
+
+<body data-spy="scroll" data-target="#navbarToggler" data-offset="160">
+  <!------------------------- NavBar ------------------------->
+  <section id="nav">
+    <nav class="navbar navbar-expand-lg navbar-light" id="transparent">
+
+      <a class="navbar-brand" href="#">SAM LIU</a>
+      <button id="custom-toggler" class="navbar-toggler" type="button" data-toggle="collapse"
+        data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+        <span id="custom-toggler-icon" class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarToggler">
+        <ul class="navbar-nav ml-auto mt-2 mt-lg-0 nav">
+          <li class="nav-item">
+            <a id="custom-nav-link" class="nav-link" href="index.html#nav">Home <span
+                class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a id="custom-nav-link" class="nav-link" href="index.html#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a id="custom-nav-link" class="nav-link active" href="index.html#portfolio">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a id="custom-nav-link" class="nav-link" href="index.html#contact">Contact</a>
+          </li>
+        </ul>
+
+      </div>
+    </nav>
+  </section>
+
+  <section id="portfolio">
+    <div class="individual-project-header">
+      <p class="individual-project-title">Monopoly</p>
+      <p class="individual-project-subtitle">Game & GUI | OCaml | Fall 2020</p>
+    </div>
+
+    <div class="individual-project-container wow animate__animated animate__slideInUp">
+      <div class="individual-project-description">
+        Everyone knows the game Monopoly &#8212 it's the classic board game
+        in which players exchange money and claim properties in the fight to be
+        the last man who’s not bankrupt. But unlike the one you probably played
+        growing up, this is a Cornell-themed Monopoly game written using
+        OCaml and functional programming.
+        <br>
+        <br>
+        Each property on the default board is a location at Cornell with a
+        corresponding color type, price, and rent. In addition, this program isn’t
+        limited to a predefined board. Users can design a board themselves and
+        import it into the game in JSON format. Player actions are directed through
+        the command line, so it is possible to play the entire game on the command
+        line. But for a more interactive game, just open the GUI to use it as a
+        real-life game board. On every turn, the command line prints out information about the
+        current player's assets, their position on the board, and all options for
+        moves they can make. Players can roll, buy and sell properties, buy buildings on
+        properties, forfeit, and end their turn. Just like in real Monopoly, players
+        receive $200 for passing "Go", and they also may land in jail.
+        <br>
+        <br>
+
+      </div>
+
+
+      <img class="individual-project-image wow animate__animated animate__slideInUp"
+        src="./images/monopoly_project1.png" alt="Monopoly Game">
+      <img class="individual-project-image wow animate__animated animate__slideInUp"
+        src="./images/monopoly_project2.png" alt="Monopoly Game">
+
+    </div>
+
+
+
+    </div>
+  </section>
+
+  <!------------------------- Footer ------------------------->
+  <footer>
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-12 col-sm-12">
+          <p class="footer-text">Sam Liu</p>
+          <ul class="social-icon">
+
+            <li><a href="https://www.facebook.com/profile.php?id=100010914094505" class="fa fa-facebook"
+                target="_blank"></a></li>
+            <li><a href="https://www.linkedin.com/in/samantha-liu-b3892b187/" class="fa fa-linkedin"
+                target="_blank"></a>
+            </li>
+            <li><a href="mailto:sl2486@cornell.edu?" class="fa fa-envelope"></a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+  <!------------------------- Scripts ------------------------->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+
+  <!------------------------- Used to animate on page scroll ------------------------->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+  <script>
+    wow = new WOW({
+      boxClass: 'wow',
+      animateClass: 'animated',
+      offset: 100
+    }
+    );
+
+    wow.init();
+  </script>
+
+</body>
+
+</html>
